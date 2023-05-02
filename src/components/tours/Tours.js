@@ -1,15 +1,12 @@
 import React from 'react'
 import { data } from '../../data/data'
+import Tour from './Tour/Tour'
+import './Tours.css'
 function Tours() {
   return (
-    <div>
+    <div className='main__tours'>
       {data.map((data)=>
-      <div key={data.id}>
-        <div>   
-          <img src={data.img} alt="" />
-          </div>
-        <h1>Name :{data.name}</h1>
-      </div>
+      <Tour key={data.id} data={data}/>
       )}
     </div>
   )
