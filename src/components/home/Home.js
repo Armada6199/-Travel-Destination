@@ -4,7 +4,6 @@ import Tours from '../tours/Tours'
 function Home() {
   return (
     <div>
-    <h1>home</h1>
       <Header/>
         <Tours/>
     </div>

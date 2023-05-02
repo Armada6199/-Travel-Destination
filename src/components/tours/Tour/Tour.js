@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 import './Tour.css'
 function Tour({data}) {
   return (
-    <div className='main__tours'>
+    <div className='main__tour'>
         <div>
-            <img src={data.img} alt="" />
+            <img src={data.img} alt={`${data.name} pic`} />
         </div>
         <div>
-          <Link to={`/city/${data.id}`}><h1>{data.name}</h1></Link>
+          <Link className='links' to={`/city/${data.id}`}><h1>{data.name}</h1></Link>
         </div>
     </div>
   )
