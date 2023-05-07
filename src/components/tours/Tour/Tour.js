@@ -4,8 +4,8 @@ import './Tour.css'
 function Tour({data}) {
   return (
     <div className='main__tour'>
-        <div>
-            <img src={data.img} alt={`${data.name} pic`} />
+        <div className='image'>
+            <img src={data.image} alt={`${data.name} pic`} />
         </div>
         <div>
           <Link className='links' to={`/city/${data.id}`}><h1>{data.name}</h1></Link>
