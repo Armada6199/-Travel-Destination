@@ -1,9 +1,20 @@
 .main__tour{
     width: 300px;
     border-radius: 30px;
-    height: 200px;
+    height: 400px;
     text-align: center;
 }
 .links{
     
+}
+.image{
+    max-width: 300px;
+    max-height: 250px;
+}
+.image img{
+    width: 300px;
+    height: 250px;
+    max-width: 300px;
+    max-height: 250px;
+    object-fit: cover;
 }
